@@ -634,6 +634,27 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2ad45959ae38d6447891142b6b0df182, type: 3}
   m_PrefabInstance: {fileID: 1270740771}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1900400001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900400000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b15d7fa8488c4d2b97088d68e7b11d0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flameMaterial: {fileID: 2100000, guid: e510a56f82c64d9f926ae4e4f12ac8aa, type: 2}
+  nozzlePositions:
+  - {x: -1.25, y: -0.5, z: -2.65}
+  - {x: 1.25, y: -0.5, z: -2.65}
+  exhaustDirection: {x: 0, y: 0, z: -1}
+  flameColor: {r: 0.25, g: 0.65, b: 1, a: 0.9}
+  nozzleRadius: 0.24
+  flameLength: 4
+  emissionRate: 100
 --- !u!4 &1508086976 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2ad45959ae38d6447891142b6b0df182, type: 3}
@@ -649,6 +670,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1900100001}
   - component: {fileID: 1900100002}
+  - component: {fileID: 1900100003}
   m_Layer: 0
   m_Name: Space Console UI
   m_TagString: Untagged
@@ -688,6 +710,24 @@ MonoBehaviour:
   styleSheet: {fileID: 7433441132597879392, guid: 0b86277b962b4b9f965c06af9e39946f, type: 3}
   themeStyleSheet: {fileID: 7433441132597879392, guid: 79471a30c09a49f8914a5825199f563c, type: 3}
   messageLimit: 100
+--- !u!114 &1900100003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8eb7a945ba3a42a1bb6a7e2f5a07a979, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orbitCamera: {fileID: 330585548}
+  locationGenerator: {fileID: 1900500002}
+  locationManager: {fileID: 1900500003}
+  cruiseSpeed: 200
+  maxTravelSeconds: 12
+  arrivalClearance: 10
 --- !u!1 &1900300000
 GameObject:
   m_ObjectHideFlags: 0
