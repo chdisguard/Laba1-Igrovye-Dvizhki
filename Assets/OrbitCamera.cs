@@ -43,6 +43,8 @@ public class OrbitCamera : MonoBehaviour
         if (Mouse.current == null)
             return;
 
+        if (SpaceConsoleUI.BlocksPointer(Mouse.current.position.ReadValue()))
+            return;
 
         // Вращение камеры при зажатой левой кнопке мыши
         if (Mouse.current.leftButton.isPressed)
