@@ -10,7 +10,7 @@ public sealed class SpaceGameplay : MonoBehaviour
     [Header("Mining")]
     [SerializeField] private SpaceMiningLaserSettings miningLaserSettings;
     [Header("Trading")]
-    [SerializeField, Min(0)] private float outpostRangeTolerance = 0;
+    [SerializeField, Min(0)] private float outpostRangeTolerance = 8;
     public SpaceGameState State { get; private set; } = new SpaceGameState();
     public string Coordinates { get; private set; } = SpaceGameState.OutpostCoordinates;
     public bool IsWarping { get; private set; }

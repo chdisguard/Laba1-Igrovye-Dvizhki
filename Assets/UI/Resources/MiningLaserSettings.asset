@@ -23,15 +23,19 @@ MonoBehaviour:
   EndWidth: 0.8
   StartAlpha: 0.9
   EndAlpha: 0.65
-  RangeTolerance: 0
+  RangeTolerance: 8
   CentreSpread: 0.15
   SurfaceOffset: 0.02
   BaseSwitchSeconds: {x: 1, y: 3}
-  FastestSwitchSeconds: {x: 1, y: 3}
+  FastestSwitchSeconds: {x: 0.25, y: 0.3}
   FastestSwitchLevel: 8
   LevelsPerColour: 5
   Colours:
   - {r: 0.2, g: 0.8, b: 1, a: 1}
+  - {r: 0.15, g: 0.4, b: 1, a: 1}
+  - {r: 1, g: 0.75, b: 0.2, a: 1}
+  - {r: 0.2, g: 1, b: 0.5, a: 1}
+  - {r: 1, g: 0.25, b: 0.1, a: 1}
   ParticleCount: 9
   ParticleSize: 0.8
   FlowCyclesPerSecond: 0.45
