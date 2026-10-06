@@ -671,6 +671,7 @@ GameObject:
   - component: {fileID: 1900100001}
   - component: {fileID: 1900100002}
   - component: {fileID: 1900100003}
+  - component: {fileID: 1900100004}
   m_Layer: 0
   m_Name: Space Console UI
   m_TagString: Untagged
@@ -728,6 +729,20 @@ MonoBehaviour:
   cruiseSpeed: 200
   maxTravelSeconds: 12
   arrivalClearance: 10
+--- !u!114 &1900100004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca69cb1989694002bd68d5713f1e530f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  miningLaserSettings: {fileID: 11400000, guid: 5f9a27525e574d1d835df3e872fe4f54, type: 2}
+  outpostRangeTolerance: 0
 --- !u!1 &1900300000
 GameObject:
   m_ObjectHideFlags: 0

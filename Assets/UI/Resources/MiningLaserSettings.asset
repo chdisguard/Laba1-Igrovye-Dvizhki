@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ab99241046c3c7418340d9f9b410a42, type: 3}
+  m_Name: MiningLaserSettings
+  m_EditorClassIdentifier: 
+  BaseSecondsPerPiece: 2
+  SecondsPerRarity: 1.4
+  SecondsPerMaterialStep: 0.12
+  SpeedBonusPerLevel: 0.35
+  MaximumLaserLevel: 20
+  Material: {fileID: 2100000, guid: e510a56f82c64d9f926ae4e4f12ac8aa, type: 2}
+  EmitterLocalPosition: {x: 0, y: 0, z: 2}
+  StartWidth: 0.22
+  EndWidth: 0.8
+  StartAlpha: 0.9
+  EndAlpha: 0.65
+  RangeTolerance: 0
+  CentreSpread: 0.15
+  SurfaceOffset: 0.02
+  BaseSwitchSeconds: {x: 1, y: 3}
+  FastestSwitchSeconds: {x: 1, y: 3}
+  FastestSwitchLevel: 8
+  LevelsPerColour: 5
+  Colours:
+  - {r: 0.2, g: 0.8, b: 1, a: 1}
+  ParticleCount: 9
+  ParticleSize: 0.8
+  FlowCyclesPerSecond: 0.45
