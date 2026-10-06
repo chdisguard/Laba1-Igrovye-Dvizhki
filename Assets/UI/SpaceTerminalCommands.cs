@@ -21,7 +21,20 @@ public sealed class SpaceTerminalCommands : MonoBehaviour
         int split = input.IndexOf(' ');
         string command = (split < 0 ? input : input.Substring(0, split)).ToLowerInvariant();
         string argument = split < 0 ? "" : input.Substring(split + 1).Trim().Trim('"');
-        // LOCATION_COMMANDS
+        if (command == "scan")
+        {
+            var generator = FindFirstObjectByType<SpaceLocationGenerator>();
+            if (generator != null && generator.AsteroidNames != null) console.AddMessage(string.Join("\n", generator.AsteroidNames));
+            return;
+        }
+#if UNITY_EDITOR || DEVELOPMENT_BUILD
+        if (command == "location")
+        {
+            try { FindFirstObjectByType<SpaceLocationGenerator>().Generate(argument); }
+            catch (Exception exception) { console.AddMessage(exception.Message); }
+            return;
+        }
+#endif
         if (command == "help") { console.AddMessage("moveto <объект> — подлететь\nhelp — команды"); return; }
         if (command != "moveto") { console.AddMessage("Неизвестная команда: " + command); return; }
         SpaceObjectMarker selected = null;

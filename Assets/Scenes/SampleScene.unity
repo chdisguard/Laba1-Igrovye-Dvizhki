@@ -788,6 +788,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1900500001}
+  - component: {fileID: 1900500002}
   m_Layer: 0
   m_Name: Location Generator
   m_TagString: Untagged
@@ -810,6 +811,45 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1900500002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900500000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb11e74d50104d1b9d80948dc0724317, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  seed: 0012345
+  ship: {fileID: 1508086976}
+  minAsteroids: 5
+  maxAsteroids: 6
+  asteroidModels:
+  - {fileID: 919132149155446097, guid: 60227a7bbb0aee0438aed4600217dffd, type: 3}
+  - {fileID: 919132149155446097, guid: b475e594c57b27640948c940b9aa9540, type: 3}
+  - {fileID: 919132149155446097, guid: 8f914a1547b337949913e9684c08f607, type: 3}
+  - {fileID: 919132149155446097, guid: 7143a33a163f08c40875e8f8e96d3802, type: 3}
+  - {fileID: 919132149155446097, guid: cc2c9b05e1e159941a59b8c9a78035f9, type: 3}
+  - {fileID: 919132149155446097, guid: 24d3d27f4e162414f9ef4a5fa25660e2, type: 3}
+  - {fileID: 919132149155446097, guid: 87a3fdc876ffcb84f90e9263965966f4, type: 3}
+  asteroidSurface: {fileID: 2100000, guid: fbe99aef89044e8ea8d875df92189a60, type: 2}
+  asteroidResources:
+  - Code: 0
+    Name: Камень
+    Color: {r: 0.48, g: 0.43, b: 0.38, a: 1}
+    Metallic: 0.05
+  - Code: 1
+    Name: Железо
+    Color: {r: 0.48, g: 0.54, b: 0.62, a: 1}
+    Metallic: 0.65
+  - Code: 2
+    Name: Медь
+    Color: {r: 0.85, g: 0.35, b: 0.17, a: 1}
+    Metallic: 0.6
+  console: {fileID: 1900100002}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
