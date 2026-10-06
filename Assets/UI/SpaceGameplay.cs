@@ -80,7 +80,6 @@ public sealed class SpaceGameplay : MonoBehaviour
         command = command.ToLowerInvariant();
         if (command != "warp" && command != "mine" && command != "storage" && command != "upgrade"
             && command != "sellall" && command != "buyspot" && command != "reroll" && command != "spots") return false;
-        if (command != "warp" && command != "mine" && command != "storage") return false;
         Initialize();
         try
         {

@@ -54,7 +54,7 @@ public sealed class SpaceTerminalCommands : MonoBehaviour
         string argument = input.Substring(separator).Trim();
         if (command.Equals("Help", StringComparison.OrdinalIgnoreCase))
         {
-            string help = "moveto [объект] — подлететь\nscan — астероиды\nwarp X Y Z — перейти в локацию\nmine / mine stop — добыча\nstorage — груз и кредиты\nТорговый аванпост: warp 420 10 82\nhelp";
+            string help = "moveto [объект] — подлететь\nscan — астероиды\nwarp X Y Z — перейти в локацию\nmine / mine stop — добыча\nstorage — груз и кредиты\nupgrade /? — улучшения\nsellall — продать груз\nbuyspot / buyspot 1..3 — купить координаты\nreroll — новые три спота\nspots — купленные координаты\nТорговый аванпост: warp 420 10 82\nhelp";
 #if UNITY_EDITOR || DEVELOPMENT_BUILD
             help += "\nLocation <сид> / Location sample (разработка)";
 #endif

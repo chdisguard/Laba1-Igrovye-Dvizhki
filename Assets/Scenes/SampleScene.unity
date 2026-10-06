@@ -742,7 +742,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   miningLaserSettings: {fileID: 11400000, guid: 5f9a27525e574d1d835df3e872fe4f54, type: 2}
-  outpostRangeTolerance: 0
+  outpostRangeTolerance: 8
 --- !u!1 &1900300000
 GameObject:
   m_ObjectHideFlags: 0
