@@ -30,7 +30,7 @@ public sealed class SpaceTerminalCommands : MonoBehaviour
 #if UNITY_EDITOR || DEVELOPMENT_BUILD
         if (command == "location")
         {
-            try { FindFirstObjectByType<SpaceLocationGenerator>().Generate(argument); }
+            try { var manager = FindFirstObjectByType<SpaceLocationManager>(); if (argument == "sample") manager.ReturnToSampleScene(); else manager.ChangeLocation(argument); }
             catch (Exception exception) { console.AddMessage(exception.Message); }
             return;
         }
