@@ -25,3 +25,5 @@
 .DS_Store
 Thumbs.db
 save.json*
+/Assets/Resources/PerformanceTestRun*.json
+/Assets/Resources/PerformanceTestRun*.json.meta
